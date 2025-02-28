@@ -1,21 +1,19 @@
 # handy-workflow
 Diverse handy workflow
 
-## Install R using asdf on mac
+## macOS
 
-Here are the steps of: using the multiple versions manager asdf to install R (any version).
+### Install R using asdf on macOS
 
-### 1.
+Here are the steps of: using the multiple versions manager asdf to install R on macOS.
 
-You must have installed asdf (https://github.com/asdf-vm/asdf) and homebrew ().
-
-### 2
-
+1. Install asdf according to https://asdf-vm.com/guide/getting-started.html.
+2. Install some library.
 
 
 
 
 
 ## Acknowledgments
-  - PurpleBooth (https://github.com/PurpleBooth/a-good-readme-template)
-  - etc
+  - You
+  - Everyone
