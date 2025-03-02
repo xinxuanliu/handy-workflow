@@ -3,7 +3,7 @@ Diverse handy workflow
 
 ## macOS
 
-### Install R using asdf on macOS
+### Install R using asdf on macOS (2025-03-02)
 
 Here are the steps of: using the multiple versions manager asdf to install R on macOS.
 
@@ -22,7 +22,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    # For pkg-config to find openblas
    export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
    ```
-   *Reopen terminal, change R version 4.4.2 below and input:*
+   *Reopen terminal, input (change R version 4.4.2):*
    ```
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
    R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas --with-lapack' asdf install r 4.4.2
