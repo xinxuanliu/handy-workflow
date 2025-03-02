@@ -3,7 +3,7 @@ Diverse handy workflow
 
 ## macOS
 
-### Install R using asdf on macOS  !NOT DONE!
+### Install R using asdf on macOS
 
 Here are the steps of: using the multiple versions manager asdf to install R on macOS.
 
@@ -25,7 +25,9 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    *Reopen terminal, input:*
    ```
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
+   #change R version 4.4.3 below
    R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas --with-lapack' asdf install r 4.4.3
+   asdf set -u r 4.4.3
    ```
    Ref:
    ```
