@@ -25,7 +25,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    *Reopen terminal, input:*
    ```
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
-   R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas --with-lapack --enable-BLAS-shlib' asdf install r 4.4.3
+   R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas --with-lapack' asdf install r 4.4.3
    ```
    Ref:
    ```
