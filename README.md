@@ -8,7 +8,8 @@ Diverse handy workflow
 Here are the steps of: using the multiple versions manager asdf to install R on macOS.
 
 1. Install [Homebrew](https://brew.sh/) and [asdf](https://asdf-vm.com/guide/getting-started.html).  
-2. Install R (for R version 4.4.2 or similar) *input below in terminal*.  
+2. Install R (for R version 4.4.2 or similar).  
+   *input below in terminal*
    ```
    brew install gcc pcre2 xz readline jpeg libpng pkgconfig libtiff zlib libxt openblas
    asdf plugin-add r https://github.com/asdf-community/asdf-r.git
