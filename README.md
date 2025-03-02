@@ -22,11 +22,9 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    # For pkg-config to find openblas
    export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
    ```
-   *Reopen terminal, input:*
+   *Reopen terminal, change R version 4.4.2 below and input:*
    ```
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
-
-   # Change R version 4.4.2 below
    R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas --with-lapack' asdf install r 4.4.2
    asdf set -u r 4.4.2
    ```
