@@ -12,7 +12,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    ```
    brew install gcc pcre2 xz readline jpeg libpng pkgconfig libtiff zlib libxt openblas
    asdf plugin-add r https://github.com/asdf-community/asdf-r.git
-   R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas="-framework Accelerate" --enable-BLAS-shlib' asdf install r <version>
+   R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --with-blas="openblas" --with-lapack --enable-BLAS-shlib' asdf install r <version>
    ```
    Ref:
    ```
