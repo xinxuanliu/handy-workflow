@@ -14,7 +14,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    brew install gcc pcre2 xz readline jpeg libpng pkgconfig libtiff zlib texinfo openblas
    brew install --cask xquartz basictex
    ```
-   *Enable OpenMP refer to [here](#enable-openmp-on-macos)*  
+   *Optional, Enable OpenMP refer to [here](#enable-openmp-on-macos)*  
    *Add to ~/.zshrc:*
    ```
    # Enable OpenBLAS
@@ -56,8 +56,8 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    ```
    pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
    ```
-3. Copy the link of libomp run-time Release file corresponding to your version from the table in: <https://mac.r-project.org/openmp/>.  
-   For example: "https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz"  
+3. Copy the link of "libomp run-time Release file" corresponding to your version from the table in: <https://mac.r-project.org/openmp/>.  
+   For example: "https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz".  
    *Run in terminal (change to your link and file name, refer to the next step if an error occurs):*
    ```
    curl -O https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz
