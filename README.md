@@ -34,7 +34,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    ```
    *Optional, use this R in RStudio:*
    ```
-   sudo ln -s ~/.asdf/shims/R /usr/bin/R
+   sudo ln -s ~/.asdf/shims/R /usr/local/bin/R
    ```
    Ref:
    ```
