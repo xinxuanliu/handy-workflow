@@ -32,6 +32,10 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    ```
    asdf set -u r 4.4.3
    ```
+   *Optional, use this R in RStudio:*
+   ```
+   sudo ln -s ~/.asdf/shims/R /usr/bin/R
+   ```
    Ref:
    ```
    https://cran.r-project.org/doc/manuals/r-release/R-admin.html#macOS
