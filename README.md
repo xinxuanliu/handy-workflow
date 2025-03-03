@@ -28,7 +28,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
    R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --x-includes=/opt/X11/include --x-libraries=/opt/X11/lib --with-blas --with-lapack' asdf install r 4.4.3
    ```
-   *Optional, set global default R version in .tool-versions file in home directory:*
+   *Optional, set global default R version in ~/.tool-versions:*
    ```
    asdf set -u r 4.4.3
    ```
