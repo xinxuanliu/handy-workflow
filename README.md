@@ -72,7 +72,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    # Release 19.1.0 adds a new file:
    ls /usr/local/include/ompx.h
    ```
-   *Add to ~/.zshrc:*
+   *Add below to ~/.zshrc, then reopen terminal or software to use OpenMP:*
    ```
    # Enable OpenMP
    export LDFLAGS="${LDFLAGS} -lomp"
