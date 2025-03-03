@@ -14,7 +14,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    brew install gcc pcre2 xz readline jpeg libpng pkgconfig libtiff zlib texinfo openblas
    brew install --cask xquartz basictex
    ```
-   *Optional, Enable OpenMP refer to [here](#enable-openmp-on-macos)*  
+   *Optional, enable OpenMP refer to [here](#enable-openmp-on-macos)*  
    *Add to ~/.zshrc:*
    ```
    # Enable OpenBLAS
