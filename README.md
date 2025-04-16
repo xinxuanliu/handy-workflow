@@ -80,8 +80,37 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    ```
    Ref:
    ```
-   https://mac.r-project.org/openmp/
+   https://mac.r-project.org/openmp
    ```
+
+
+### Create RAM disk on macOS
+
+2025-04-16
+
+You need to specify Format, Name and Size of the disk.
+
+Size is the number of 512-byte blocks contained in RAM disk. For example, Size=2048 means a RAM disk of 1MB, Size=2097152 means 1GB.
+
+Just substitute the arguments in examples below:
+
+1. Create a RAM disk of 2GB named RAMDisk in APFS format:  
+   *Run in termial:*
+   ```
+   diskutil apfs create $(hdiutil attach -nomount ram://4194304) RAMDisk && touch /Volumes/RAMDisk/.metadata_never_index
+   ```
+2. Create a RAM disk of 2GB named RAMDisk in HFS+ format:  
+   *Run in terminal:*
+   ```
+   diskutil erasevolume HFS+ RAMDisk `hdiutil attach -nomount ram://4194304` && touch /Volumes/RAMDisk/.metadata_never_index
+   ```
+*The touch command at the end tells Spotlight not to needlessly index it. Yet, it might not be correlated with the performance.*  
+*Eject the disk to release the RAM, all data will get lost when ejection.*  
+*The disk will not preserve if you reboot or shutdown.*  
+Ref:
+```
+https://superuser.com/questions/1480144/creating-a-ram-disk-on-macos
+```
 
 
 ## Acknowledgements
