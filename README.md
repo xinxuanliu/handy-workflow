@@ -102,7 +102,7 @@ https://mac.r-project.org/openmp
    diskutil erasevolume HFS+ RAMDisk `hdiutil attach -nomount ram://4194304` && touch /Volumes/RAMDisk/.metadata_never_index
    ```
 3. To release the RAM, you can do one below:  
-   *Attention! No Data can survive after releasing the RAM.*
+   *Attention! No data can survive after releasing the RAM.*
    - Eject the RAM disk
    - Reboot computer
    - Shutdown computer
