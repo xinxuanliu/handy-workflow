@@ -63,7 +63,7 @@ https://github.com/asdf-community/asdf-r
    curl -O https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz
    sudo tar fvxz openmp-10.0.0-darwin17-Release.tar.gz -C /
    ```
-   - Even if you encounter an error when running above code, proceed to the next step if the files below exist (so simply remove these to uninstall):
+   - Even if you encounter an error when running above code, proceed to the next step if the files below exist (so to uninstall, just remove them):
    ```
    ls /usr/local/lib/libomp.dylib
    ls /usr/local/include/ompt.h
