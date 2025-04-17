@@ -90,18 +90,18 @@ https://mac.r-project.org/openmp
 
 1. Calculate the size of the disk:
    - Size is the number of 512-byte blocks contained in the RAM disk.
-   - For example, size=2048 means a RAM disk of 1MB, size=2097152 means 1GB.
-2. Substitute name and size of the disk in examples below:  
+   - Size = 1 means 512 B, size = 2048 means 1 MiB, size = 2097152 means 1 GiB.
+2. Substitute name and size you want of the disk in examples below:  
    *The touch command at the end tells Spotlight not to needlessly index it. Yet, it might not be correlated with the performance.*
-   - Create a RAM disk of 2GB named RAMDisk in APFS format, run in termial:
+   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk in APFS format, run in termial:
    ```
    diskutil apfs create $(hdiutil attach -nomount ram://4194304) RAMDisk && touch /Volumes/RAMDisk/.metadata_never_index
    ```
-   - Create a RAM disk of 2GB named RAMDisk in HFS+ format, run in terminal:
+   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk in HFS+ format, run in terminal:
    ```
    diskutil erasevolume HFS+ RAMDisk `hdiutil attach -nomount ram://4194304` && touch /Volumes/RAMDisk/.metadata_never_index
    ```
-3. To release the RAM, you can do 1 below:  
+3. To release the RAM, select one from the ways below:  
    *Attention! No data can survive after releasing the RAM.*
    - Eject the RAM disk.
    - Reboot computer.
