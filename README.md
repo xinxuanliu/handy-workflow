@@ -57,7 +57,7 @@ https://github.com/asdf-community/asdf-r
    pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
    ```
 3. Copy the link of "libomp run-time Release file" corresponding to your version from the table in: <https://mac.r-project.org/openmp/>.  
-   For example: "https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz".
+   For example: https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz.
    - Run in terminal (change to your link and file name, refer to the next step if an error occurs):
    ```
    curl -O https://mac.r-project.org/openmp/openmp-10.0.0-darwin17-Release.tar.gz
