@@ -93,13 +93,13 @@ https://mac.r-project.org/openmp
    - Size = 1 means 512 B, size = 2048 means 1 MiB, size = 2097152 means 1 GiB.
 2. Substitute name and size you want of the disk in examples below:  
    *The touch command at the end tells Spotlight not to needlessly index it. Yet, it might not be correlated with the performance.*
-   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk in APFS format, run in termial:
+   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk1 in APFS format, run in termial:
    ```
-   diskutil apfs create $(hdiutil attach -nomount ram://4194304) RAMDisk && touch /Volumes/RAMDisk/.metadata_never_index
+   diskutil apfs create $(hdiutil attach -nomount ram://4194304) RAMDisk1 && touch /Volumes/RAMDisk1/.metadata_never_index
    ```
-   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk in HFS+ format, run in terminal:
+   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk2 in HFS+ format, run in terminal:
    ```
-   diskutil erasevolume HFS+ RAMDisk `hdiutil attach -nomount ram://4194304` && touch /Volumes/RAMDisk/.metadata_never_index
+   diskutil erasevolume HFS+ RAMDisk2 `hdiutil attach -nomount ram://4194304` && touch /Volumes/RAMDisk2/.metadata_never_index
    ```
 3. To release the RAM, select one from the ways below:  
    *Attention! No data can survive after releasing the RAM.*
