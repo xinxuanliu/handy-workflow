@@ -28,13 +28,19 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
    R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --x-includes=/opt/X11/include --x-libraries=/opt/X11/lib --with-blas --with-lapack' asdf install r 4.4.3
    ```
-   - Optionally, set global default R version in ~/.tool-versions:
+   - Optionally, set global default R version in ~/.tool-versions, run in terminal:
    ```
    asdf set -u r 4.4.3
    ```
-   - Optionally, use asdf R in RStudio (assume that no other R is installed):
+   - Optionally, use asdf R in RStudio (assume that no other R is installed), run in terminal:
    ```
    sudo ln -s ~/.asdf/shims/R /usr/local/bin/R
+   # OR
+   # sudo ln -s ~/.asdf/shims/R /opt/local/bin/R
+   ```
+   - Optionally, check if OpenBLAS is correctly configured, run in R:
+   ```
+   sessionInfo()
    ```
 Ref:
 ```
@@ -48,7 +54,7 @@ https://github.com/asdf-community/asdf-r
 2025-03-03
 
 1. Install Xcode Command Line Tools (CLT):
-   - Run in termial:
+   - Run in terminal:
    ```
    xcode-select --install
    ```
@@ -94,7 +100,7 @@ https://mac.r-project.org/openmp
    - Size = 1 means 512 B, size = 2048 means 1 MiB, size = 2097152 means 1 GiB.
 2. Substitute name and size you want of the disk in examples below:  
    *The touch command at the end tells Spotlight not to needlessly index it.*
-   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk1 in APFS format, run in termial:
+   - Create a RAM disk of 2 GiB (size = 4194304) named RAMDisk1 in APFS format, run in terminal:
    ```
    diskutil apfs create $(hdiutil attach -nomount ram://4194304) RAMDisk1 && touch /Volumes/RAMDisk1/.metadata_never_index
    ```
