@@ -35,8 +35,6 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    - Optionally, use asdf R in RStudio (assume that no other R is installed), run in terminal:
    ```
    sudo ln -s ~/.asdf/shims/R /usr/local/bin/R
-   # OR
-   # sudo ln -s ~/.asdf/shims/R /opt/local/bin/R
    ```
    - Optionally, check if OpenBLAS is correctly configured, run in R:
    ```
