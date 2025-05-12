@@ -32,7 +32,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    ```
    asdf set -u r 4.4.3
    ```
-   - Optionally, use asdf R in RStudio (assume that no other R is installed), run in terminal:
+   - Optionally, use asdf R in RStudio (assuming no additional R installations exist), run in terminal:
    ```
    sudo ln -s ~/.asdf/shims/R /usr/local/bin/R
    ```
