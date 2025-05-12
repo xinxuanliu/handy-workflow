@@ -15,7 +15,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    brew install gcc pcre2 xz readline jpeg libpng pkgconfig libtiff zlib texinfo openblas
    brew install --cask xquartz basictex
    ```
-   - Optional, enable OpenMP refer to [here](#enable-openmp-on-macos).
+   - Optionally, enable OpenMP refer to [here](#enable-openmp-on-macos).
    - Enable OpenBLAS, add to ~/.zshrc (if OpenBLAS is installed manually or via a package manager other than Homebrew, update the path as needed):
    ```
    # Enable OpenBLAS
@@ -28,11 +28,11 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    asdf plugin add r https://github.com/asdf-community/asdf-r.git
    R_EXTRA_CONFIGURE_OPTIONS='--enable-R-shlib --enable-memory-profiling --x-includes=/opt/X11/include --x-libraries=/opt/X11/lib --with-blas --with-lapack' asdf install r 4.4.3
    ```
-   - Optional, set global default R version in ~/.tool-versions:
+   - Optionally, set global default R version in ~/.tool-versions:
    ```
    asdf set -u r 4.4.3
    ```
-   - Optional, use asdf R in RStudio (assume that no other R is installed):
+   - Optionally, use asdf R in RStudio (assume that no other R is installed):
    ```
    sudo ln -s ~/.asdf/shims/R /usr/local/bin/R
    ```
