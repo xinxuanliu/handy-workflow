@@ -17,7 +17,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
    - Optional, enable OpenMP refer to [here](#enable-openmp-on-macos).
    - Add to ~/.zshrc:
    ```
-   # Enable OpenBLAS
+   # Enable OpenBLAS (if OpenBLAS is installed manually or via a package manager other than Homebrew, update the path as needed)
    export LDFLAGS="${LDFLAGS} -L/usr/local/opt/openblas/lib"
    export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/openblas/include"
    export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/openblas/lib/pkgconfig"
