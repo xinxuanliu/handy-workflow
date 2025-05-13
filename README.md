@@ -10,7 +10,7 @@ Here are the steps of: using the multiple versions manager asdf to install R on 
 1. Install [Homebrew](https://brew.sh/) and [asdf](https://asdf-vm.com/guide/getting-started.html).  
 2. Install R (version 4.4.3 or similar):
    - Run below in terminal twice to ensure everything is installed (may require your system password):  
-     *You can just install gfortran instead of gcc (https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Fortran-compilers). To add "-rpath /usr/local/gfortran/lib" to LDFLAGS, see the below step Enable OpenBLAS.*
+     *You can just install gfortran instead of gcc, see https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Fortran-compilers.*
    ```
    brew install gcc pcre2 xz readline jpeg libpng pkgconfig libtiff zlib texinfo openblas
    brew install --cask xquartz basictex
